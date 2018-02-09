@@ -53,8 +53,4 @@ p {
 .mh-100 {
   min-height: 100vh;
 }
-
-.text-warning {
-  color: #e0bd7a !important;
-}
 </style>

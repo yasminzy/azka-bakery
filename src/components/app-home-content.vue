@@ -29,8 +29,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 a {
-  border-bottom: 0.25rem solid #e0bd7a;
+  border-bottom: 0.25rem solid #ffc107;
+
+  &:hover {
+    border-bottom: 0.25rem solid #d39e00;
+  }
 }
 </style>

@@ -18,7 +18,7 @@ export default new Router({
     { path: "/menu", component: Menu },
     { path: "/reservations", component: Reservations }
   ],
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior() {
     return { x: 0, y: 0 };
   }
 });
