@@ -1,6 +1,6 @@
 <template>
 <div class="mh-100">
-  <app-banner cursive="delish" title="menu" />
+  <app-banner cursive="delightful" heading="menu" />
 </div>
 </template>
 

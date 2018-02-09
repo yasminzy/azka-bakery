@@ -1,45 +1,28 @@
 <template>
 <div class="container-fluid mh-100">
-  <div class="animated fadeIn container text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-    <span class="cursive text-warning w-100">Welcome</span>
-    <h1 class="font-weight-bold text-white">THE AZKA</h1>
+  <div class="container text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+    <app-heading cursive="welcome" heading="the azka" home="true" />
 
     <hr class="text-warning">
 
     <small class="h6 text-white">PASTRIES &amp; DESSERTS</small>
-
-    <!-- <gmap-map class="mx-auto" v-bind:center="center" v-bind:zoom="7" style="height: 225px; max-width: 400px; width: 100%;">
-      <gmap-marker v-bind:key="index" v-for="(m, index) in markers" v-bind:position="m.position" v-bind:clickable="true" />
-    </gmap-map> -->
   </div>
 </div>
 </template>
 
 <script>
+import AppHeading from "./app-heading";
+
 export default {
-  data() {
-    return {
-      center: { lat: -0.494823, lng: 117.143615 },
-      markers: [
-        {
-          position: { lat: -0.494823, lng: 117.143615 }
-        }
-      ]
-    };
+  components: {
+    AppHeading
   }
 };
 </script>
 
 <style lang="scss" scoped>
-$yellow: #ffe082;
-
-.animated {
-  animation-delay: 1s;
-  animation-duration: 2s;
-}
-
 .container-fluid {
-  background: url("/img/header.jpg") center center no-repeat;
+  background: url("/img/header.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 7.5rem;
 

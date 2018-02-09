@@ -25,6 +25,10 @@
 
 <script>
 export default {
+  props: {
+    color: String,
+    default: "dark"
+  },
   data() {
     return {
       menu: [
@@ -34,19 +38,8 @@ export default {
         },
         "Menu",
         "Reservations",
-        "News",
-        "Features",
+        "About",
         "Contact"
-      ],
-      accounts: [
-        {
-          icon: "social-facebook",
-          link: "https://www.facebook.com"
-        },
-        {
-          icon: "social-twitter",
-          link: "https://twitter.com"
-        }
       ]
     };
   },
@@ -63,8 +56,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$bb: 0.125rem solid rgba(255, 255, 255, 0.5);
-
 .navbar {
   position: absolute;
   z-index: 1;
@@ -76,7 +67,7 @@ $bb: 0.125rem solid rgba(255, 255, 255, 0.5);
 
 @media (min-width: 992px) {
   .nav-link.router-link-active {
-    border-bottom: $bb;
+    border-bottom: 0.125rem solid rgba(255, 255, 255, 0.5);
   }
 }
 </style>

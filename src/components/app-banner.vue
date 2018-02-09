@@ -1,66 +1,65 @@
 <template>
-<div class="container-fluid d-flex justify-content-center align-items-center py-5 mh-50" v-bind:id="title">
-  <div class="container text-center" data-aos="fade">
-    <span class="cursive m-0 text-capitalize text-warning">{{ cursive }}</span>
-    <h2 class="font-weight-bold text-uppercase text-white">{{ title }}</h2>
-  </div>
+<div class="container-fluid d-flex justify-content-center align-items-center py-5 mh-50" v-bind:id="urlize(heading)">
+  <app-heading class="text-center" v-bind:cursive="cursive" v-bind:heading="heading" />
 </div>
 </template>
 
 <script>
+import { urlize } from "@/functions";
+import AppHeading from "./app-heading";
+
 export default {
+  components: {
+    AppHeading
+  },
   props: {
     cursive: {
       type: String,
       required: true
     },
-    title: {
+    heading: {
       type: String,
       required: true
     }
+  },
+  methods: {
+    urlize
   }
 };
 </script>
 
 <style lang="scss" scoped>
 #recipes {
-  background: url("/img/recipes.jpg") no-repeat center center;
+  background-image: url("/img/recipes.jpg");
 }
 
 #blend {
-  background: url("/img/blend.jpg") no-repeat center center;
+  background-image: url("/img/blend.jpg");
 }
 
 #menu {
-  background: url("/img/menu.jpg") no-repeat center center;
+  background-image: url("/img/menu.jpg");
 }
 
 #reservations {
-  background: url("/img/menu.jpg") no-repeat center center;
-  // background: url("/img/reservations.jpg") no-repeat center center;
+  background-image: url("/img/reservations.jpg");
 }
 
-#news {
-  background: url("/img/menu.jpg") no-repeat center center;
-  // background: url("/img/news.jpg") no-repeat center center;
-}
-
-#features {
-  background: url("/img/menu.jpg") no-repeat center center;
-  // background: url("/img/features.jpg") no-repeat center center;
+#about-us {
+  background-image: url("/img/about-us.jpg");
 }
 
 #contact {
-  background: url("/img/menu.jpg") no-repeat center center;
-  // background: url("/img/contact.jpg") no-repeat center center;
+  background-image: url("/img/contact.jpg");
 }
 
 .container-fluid {
+  background: fixed center center no-repeat;
   background-size: cover;
 }
 
 span {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 
   @media (min-width: 576px) {
     font-size: 4.5rem;
@@ -68,12 +67,13 @@ span {
 }
 
 h2 {
-  letter-spacing: 0.25rem;
-  margin-top: -1rem;
   font-size: 3rem;
+  letter-spacing: 0.25rem;
+  margin-top: -2rem;
 
   @media (min-width: 576px) {
     font-size: 4.5rem;
+    margin-top: -2.5rem;
   }
 }
 

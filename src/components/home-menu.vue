@@ -2,32 +2,36 @@
 <div class="container-fluid py-5 d-flex justify-content-center">
   <div class="container row mx-auto">
     <div class="col-lg-6 p-0 pic" data-aos="fade-up-left">
-      <div class="d-flex align-items-center" v-for="(item, index) in filter(menu, 4)" v-bind:key="index">
-        <img class="img-fluid mx-auto" v-bind:src="'img/' + urlize(item.name) + '.jpg'" v-bind:alt="item.name">
+      <div class="img-wrapper" v-for="(item, index) in menu" v-bind:key="index">
+        <img class="hvr-grow img-fluid" v-bind:src="'img/' + urlize(item) + '.jpg'" v-bind:alt="item">
       </div>
     </div>
 
-    <app-home-text cursive="Discover" title="MENU" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="menu" link="VIEW THE FULL MENU" data-aos="fade-up-right" />
+    <div class="col-lg-6 text-center" data-aos="fade-up-right">
+      <app-heading class="text-dark" cursive="delightful" heading="menu" color="dark" />
+
+      <app-home-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="menu" link="view the full menu" />
+    </div>
   </div>
 </div>
 </template>
 
 <script>
-import { filter, urlize } from "@/functions";
-import { menu } from "@/data";
-import AppHomeText from "./app-home-text";
+import { urlize } from "@/functions";
+import AppHeading from "./app-heading";
+import AppHomeContent from "./app-home-content";
 
 export default {
   components: {
-    AppHomeText
+    AppHeading,
+    AppHomeContent
   },
   data() {
     return {
-      menu
+      menu: ["Cake 1", "Cake 2", "Cake 3", "Cake 4"]
     };
   },
   methods: {
-    filter,
     urlize
   }
 };
@@ -46,9 +50,5 @@ export default {
   @media (min-width: 992px) {
     margin-bottom: 0;
   }
-}
-
-img {
-  // max-height: 200px;
 }
 </style>

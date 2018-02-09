@@ -1,32 +1,37 @@
 <template>
 <div class="container-fluid py-5 d-flex justify-content-center">
   <div class="container row mx-auto">
-    <app-home-text cursive="Culinary" title="DELIGHT" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="reservation" link="MAKE A RESERVATION" data-aos="fade-down-right" />
+    <div class="col-lg-6 text-center" data-aos="fade-down-right">
+      <app-heading class="text-dark" cursive="culinary" heading="delight" color="dark" />
+
+      <app-home-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="reservations" link="make a reservation" />
+    </div>
 
     <div class="col-lg-6 pic" data-aos="fade-down-left">
-        <img class="img-fluid" src="/img/menu-5.jpg" alt="">
-        <img class="img-fluid" src="/img/menu-6.jpg" alt="">
+      <div class="img-wrapper" v-for="(item, index) in menu" v-bind:key="index">
+        <img class="hvr-grow img-fluid" v-bind:src="'img/' + urlize(item) + '.jpg'" v-bind:alt="item">
+      </div>
     </div>
   </div>
 </div>
 </template>
 
 <script>
-import { filter, urlize } from "@/functions";
-import { menu } from "@/data";
-import AppHomeText from "./app-home-text";
+import { urlize } from "@/functions";
+import AppHeading from "./app-heading";
+import AppHomeContent from "./app-home-content";
 
 export default {
   components: {
-    AppHomeText
+    AppHeading,
+    AppHomeContent
   },
   data() {
     return {
-      menu
+      menu: ["Cake 5", "Cake 6"]
     };
   },
   methods: {
-    filter,
     urlize
   }
 };

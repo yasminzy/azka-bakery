@@ -1,6 +1,6 @@
 <template>
 <div class="mh-100">
-  <app-banner cursive="-" title="reservations" />
+  <app-banner cursive="convenient" heading="reservations" />
 </div>
 </template>
 
@@ -15,7 +15,5 @@ export default {
 </script>
 
 <style scoped>
-.mh-50 {
-  min-height: 50vh;
-}
+
 </style>

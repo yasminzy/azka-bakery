@@ -1,7 +1,7 @@
 <template>
 <div class="bg-light d-flex flex-column mh-100" id="top">
   <app-nav />
-  <router-view />
+  <router-view data-aos="fade" />
   <app-footer />
 </div>
 </template>
@@ -45,9 +45,9 @@ p {
   font-family: "Dancing Script", cursive;
 }
 
-.fadeIn {
-  animation-delay: 0.25s;
-  animation-duration: 0.5s;
+.img-wrapper {
+  display: inline-block;
+  overflow: hidden;
 }
 
 .mh-100 {
@@ -55,7 +55,6 @@ p {
 }
 
 .text-warning {
-  /* color: #ffe082 !important; */
   color: #e0bd7a !important;
 }
 </style>
