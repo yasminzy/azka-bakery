@@ -1,6 +1,6 @@
 <template>
 <div>
-  <span class="cursive m-0 text-capitalize text-warning">{{ cursive }}</span>
+  <span class="cursive m-0 text-capitalize text-primary">{{ cursive }}</span>
 
   <h2 v-if="!home" v-bind:class="'font-weight-bold text-uppercase text-' + color">{{ heading }}</h2>
 

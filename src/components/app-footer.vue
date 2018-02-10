@@ -35,7 +35,7 @@
   <div class="bg-dark container-fluid py-2 text-light">
     <div class="container">
       <small>&copy; Copyright 2018 Developed by
-        <a class="text-warning">Yasmin ZY</a>
+        <a class="text-primary">Yasmin ZY</a>
       </small>
     </div>
   </div>
@@ -59,13 +59,13 @@ export default {
       hours: [
         {
           days: "Monday - Thursday",
-          hours: "5:30pm - 10:00pm"
+          hours: "10:00am - 8:00pm"
         },
         {
           days: "Friday & Saturday",
-          hours: "5:30pm - 11:00pm"
+          hours: "10:00am - 9:00pm"
         },
-        "Available for private events on Sunday"
+        "Sunday closed"
       ]
     };
   }
@@ -81,6 +81,6 @@ export default {
 }
 
 .bg-black {
-  background-color: #212529;
+  background-color: #212121;
 }
 </style>

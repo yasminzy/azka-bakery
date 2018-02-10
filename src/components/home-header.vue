@@ -3,7 +3,7 @@
   <div class="container text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
     <app-heading cursive="welcome" heading="the azka" home="true" />
 
-    <hr class="text-warning">
+    <hr class="text-primary">
 
     <small class="h6 text-white">PASTRIES &amp; DESSERTS</small>
   </div>
@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 .container-fluid {
-  background: url("/img/header.jpg") no-repeat center center;
+  background: url("../assets/header.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 7.5rem;
 

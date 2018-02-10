@@ -4,7 +4,7 @@
 
   <p class="text-muted">{{ content }}</p>
 
-  <router-link class="text-uppercase text-warning" v-bind:to="to">
+  <router-link class="text-uppercase text-primary" v-bind:to="to">
     {{ link }}
   </router-link>
 </div>
@@ -31,10 +31,10 @@ export default {
 
 <style lang="scss" scoped>
 a {
-  border-bottom: 0.25rem solid #ffc107;
+  border-bottom: 0.125rem solid #ff9800;
 
   &:hover {
-    border-bottom: 0.25rem solid #d39e00;
+    border-bottom: 0.125rem solid #cc7a00;
   }
 }
 </style>

@@ -18,10 +18,10 @@
     "vue2-google-maps": "^0.8.4"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-alpha.10",
-    "@vue/cli-plugin-eslint": "^3.0.0-alpha.10",
-    "@vue/cli-service": "^3.0.0-alpha.10",
-    "@vue/eslint-config-prettier": "^3.0.0-alpha.10",
+    "@vue/cli-plugin-babel": "^3.0.0-alpha.11",
+    "@vue/cli-plugin-eslint": "^3.0.0-alpha.11",
+    "@vue/cli-service": "^3.0.0-alpha.11",
+    "@vue/eslint-config-prettier": "^3.0.0-alpha.11",
     "lint-staged": "^6.0.0",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",

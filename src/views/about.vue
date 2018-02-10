@@ -15,7 +15,5 @@ export default {
 </script>
 
 <style scoped>
-.mh-50 {
-  min-height: 50vh;
-}
+
 </style>

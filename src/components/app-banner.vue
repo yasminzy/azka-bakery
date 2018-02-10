@@ -30,27 +30,27 @@ export default {
 
 <style lang="scss" scoped>
 #recipes {
-  background-image: url("/img/recipes.jpg");
+  background-image: url("../assets/recipes.jpg");
 }
 
 #blend {
-  background-image: url("/img/blend.jpg");
+  background-image: url("../assets/blend.jpg");
 }
 
 #menu {
-  background-image: url("/img/menu.jpg");
+  background-image: url("../assets/menu.jpg");
 }
 
 #reservations {
-  background-image: url("/img/reservations.jpg");
+  background-image: url("../assets/reservations.jpg");
 }
 
 #about-us {
-  background-image: url("/img/about-us.jpg");
+  background-image: url("../assets/about-us.jpg");
 }
 
 #contact {
-  background-image: url("/img/contact.jpg");
+  background-image: url("../assets/contact.jpg");
 }
 
 .container-fluid {

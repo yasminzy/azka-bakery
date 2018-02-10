@@ -19,12 +19,16 @@ export default {
 </script>
 
 <style>
+:root {
+  scroll-behavior: smooth;
+}
+
 [v-cloak] {
   display: none;
 }
 
 ::selection {
-  background-color: #6c757d;
+  background-color: #ff9800;
   color: white;
 }
 
@@ -33,6 +37,7 @@ body {
   overflow-x: hidden;
 }
 
+a,
 a:hover {
   text-decoration: none;
 }

@@ -9,7 +9,7 @@
 
     <div class="col-lg-6 pic" data-aos="fade-right">
       <div class="img-wrapper">
-        <img class="hvr-grow img-fluid" src="img/about.jpg" alt="Food">
+        <img class="hvr-grow img-fluid" src="../assets/about.jpg" alt="Food">
       </div>
     </div>
   </div>

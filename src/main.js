@@ -2,19 +2,17 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "jquery/dist/jquery.slim.min.js";
 import "popper.js/dist/popper.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
+
+import "./custom-bootstrap.css";
 
 import "hover.css/css/hover-min.css";
-// import "./animate.css";
-
-// import "aos/dist/aos.css";
-// import "aos/dist/aos.js";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 import * as VueGoogleMaps from "vue2-google-maps";
 Vue.use(VueGoogleMaps, {
