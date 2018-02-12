@@ -2,9 +2,9 @@
 <div>
   <span class="cursive m-0 text-capitalize text-primary">{{ cursive }}</span>
 
-  <h2 v-if="!home" v-bind:class="'font-weight-bold text-uppercase text-' + color">{{ heading }}</h2>
+  <h2 v-if="!home" v-bind:class="'font-weight-bold text-uppercase text-' + color">{{ title }}</h2>
 
-  <h1 v-else v-bind:class="'font-weight-bold text-uppercase text-' + color">{{ heading }}</h1>
+  <h1 v-else v-bind:class="'font-weight-bold text-uppercase text-' + color">{{ title }}</h1>
 </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
       type: String,
       required: true
     },
-    heading: {
+    title: {
       type: String,
       required: true
     },

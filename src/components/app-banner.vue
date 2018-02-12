@@ -1,25 +1,32 @@
 <template>
-<div class="container-fluid d-flex justify-content-center align-items-center py-5 mh-50" v-bind:id="urlize(heading)">
-  <app-heading class="text-center" v-bind:cursive="cursive" v-bind:heading="heading" />
+<div v-bind:class="'container-fluid d-flex justify-content-center align-items-center py-5 mh-' + height" v-bind:id="urlize(title)">
+  <app-title class="text-center" v-show="!empty" v-bind:cursive="cursive" v-bind:title="title" data-aos="fade" />
 </div>
 </template>
 
 <script>
 import { urlize } from "@/functions";
-import AppHeading from "./app-heading";
+import AppTitle from "./app-title";
 
 export default {
   components: {
-    AppHeading
+    AppTitle
   },
   props: {
     cursive: {
+      type: String
+    },
+    title: {
       type: String,
       required: true
     },
-    heading: {
-      type: String,
-      required: true
+    height: {
+      type: Number,
+      default: 50
+    },
+    empty: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {
@@ -37,20 +44,24 @@ export default {
   background-image: url("../assets/blend.jpg");
 }
 
-#menu {
-  background-image: url("../assets/menu.jpg");
-}
-
-#reservations {
-  background-image: url("../assets/reservations.jpg");
+#products {
+  background-image: url("../assets/order.jpg");
 }
 
 #about-us {
   background-image: url("../assets/about-us.jpg");
 }
 
+#bakery {
+  background-image: url("../assets/bakery.jpg");
+}
+
 #contact {
   background-image: url("../assets/contact.jpg");
+}
+
+#sent {
+  background-image: url("../assets/sent.jpg");
 }
 
 .container-fluid {

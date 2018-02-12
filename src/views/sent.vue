@@ -1,7 +1,5 @@
 <template>
-<div class="mh-100">
-  <app-banner cursive="delightful" heading="menu" />
-</div>
+<app-banner cursive="message" title="sent" v-bind:height="100" />
 </template>
 
 <script>

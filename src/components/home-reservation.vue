@@ -2,9 +2,9 @@
 <div class="container-fluid py-5 d-flex justify-content-center">
   <div class="container row mx-auto">
     <div class="col-lg-6 text-center" data-aos="fade-down-right">
-      <app-heading class="text-dark" cursive="culinary" heading="delight" color="dark" />
+      <app-title class="text-dark" cursive="culinary" title="delight" color="dark" />
 
-      <app-home-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="reservations" link="make a reservation" />
+      <app-home-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="order" link="order now" />
     </div>
 
     <div class="col-lg-6 pic" data-aos="fade-down-left">
@@ -18,12 +18,12 @@
 
 <script>
 import { urlize } from "@/functions";
-import AppHeading from "./app-heading";
+import AppTitle from "./app-title";
 import AppHomeContent from "./app-home-content";
 
 export default {
   components: {
-    AppHeading,
+    AppTitle,
     AppHomeContent
   },
   data() {

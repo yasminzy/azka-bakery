@@ -8,9 +8,9 @@
     </div>
 
     <div class="col-lg-6 text-center" data-aos="fade-up-right">
-      <app-heading class="text-dark" cursive="delightful" heading="menu" color="dark" />
+      <app-title class="text-dark" cursive="delightful" title="products" color="dark" />
 
-      <app-home-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="menu" link="view the full menu" />
+      <app-home-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="order" link="view all products" />
     </div>
   </div>
 </div>
@@ -18,12 +18,12 @@
 
 <script>
 import { urlize } from "@/functions";
-import AppHeading from "./app-heading";
+import AppTitle from "./app-title";
 import AppHomeContent from "./app-home-content";
 
 export default {
   components: {
-    AppHeading,
+    AppTitle,
     AppHomeContent
   },
   data() {

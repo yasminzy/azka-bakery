@@ -25,10 +25,6 @@
 
 <script>
 export default {
-  props: {
-    color: String,
-    default: "dark"
-  },
   data() {
     return {
       menu: [
@@ -36,8 +32,7 @@ export default {
           to: "/",
           label: "Welcome"
         },
-        "Menu",
-        "Reservations",
+        "Order",
         "About",
         "Contact"
       ]

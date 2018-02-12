@@ -5,22 +5,16 @@ import router from "./router";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import "jquery/dist/jquery.slim.min.js";
-import "popper.js/dist/popper.min.js";
-import "bootstrap/dist/js/bootstrap.min.js";
+// import "jquery/dist/jquery.slim.min";
+import "popper.js/dist/popper.min";
+import "bootstrap/dist/js/bootstrap.min";
 // import "bootstrap/dist/css/bootstrap.css";
 
 import "./custom-bootstrap.css";
 
 import "hover.css/css/hover-min.css";
 
-import * as VueGoogleMaps from "vue2-google-maps";
-Vue.use(VueGoogleMaps, {
-  load: {
-    key: "AIzaSyBuLE0a2oN-c7WJZfINQxtLOGJTwNfaBxQ",
-    libraries: "places"
-  }
-});
+import "./snipcart/custom-snipcart.css";
 
 Vue.config.productionTip = false;
 

@@ -1,21 +1,21 @@
 <template>
 <div class="container-fluid mh-100">
   <div class="container text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-    <app-heading cursive="welcome" heading="the azka" home="true" />
+    <app-title cursive="welcome" title="the azka" />
 
     <hr class="text-primary">
 
-    <small class="h6 text-white">PASTRIES &amp; DESSERTS</small>
+    <small class="h6 text-white">BAKERY &amp; PASTRY</small>
   </div>
 </div>
 </template>
 
 <script>
-import AppHeading from "./app-heading";
+import AppTitle from "./app-title";
 
 export default {
   components: {
-    AppHeading
+    AppTitle
   }
 };
 </script>

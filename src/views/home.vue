@@ -2,9 +2,9 @@
 <div>
   <home-header />
   <home-about />
-  <app-banner cursive="tasteful" heading="recipes" />
+  <app-banner cursive="tasteful" title="recipes" />
   <home-menu />
-  <app-banner cursive="the perfect" heading="blend" />
+  <app-banner cursive="the perfect" title="blend" />
   <home-reservation />
 </div>
 </template>

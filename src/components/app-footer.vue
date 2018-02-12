@@ -33,10 +33,17 @@
   </div>
 
   <div class="bg-dark container-fluid py-2 text-light">
-    <div class="container">
-      <small>&copy; Copyright 2018 Developed by
-        <a class="text-primary">Yasmin ZY</a>
-      </small>
+    <div class="container d-flex align-items-center">
+      <p class="mb-0 mr-4">&copy; 2018 The Azka. All rights reserved.
+      </p>
+
+      <ul class="list-unstyled d-flex justify-content-center align-items-center mb-0">
+          <li v-for="(item, index) in accounts" v-bind:key="index">
+            <a class="text-light" v-bind:href="item.link">
+              <i v-bind:class="'icon ion-' + item.icon + ' px-2'"></i>
+            </a>
+          </li>
+        </ul>
     </div>
   </div>
 </footer>
@@ -58,14 +65,32 @@ export default {
       ],
       hours: [
         {
-          days: "Monday - Thursday",
+          days: "Monday - Friday",
           hours: "10:00am - 8:00pm"
         },
         {
-          days: "Friday & Saturday",
+          days: "Saturday & Sunday",
           hours: "10:00am - 9:00pm"
         },
-        "Sunday closed"
+        "National holidays closed"
+      ],
+      accounts: [
+        {
+          icon: "social-facebook",
+          link: "https://www.facebook.com"
+        },
+        {
+          icon: "social-instagram",
+          link: "https://www.instagram.com"
+        },
+        {
+          icon: "social-pinterest",
+          link: "https://www.pinterest.com"
+        },
+        {
+          icon: "social-twitter",
+          link: "https://twitter.com"
+        }
       ]
     };
   }

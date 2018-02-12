@@ -2,7 +2,7 @@
 <div class="container-fluid py-5 d-flex justify-content-center">
   <div class="container mx-auto row">
     <div class="col-lg-6 text-center" data-aos="fade-left">
-      <app-heading class="text-dark" cursive="Discover" heading="OUR STORY" color="dark" />
+      <app-title class="text-dark" cursive="Discover" title="OUR STORY" color="dark" />
 
       <app-home-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="about" link="about us" />
     </div>
@@ -17,12 +17,12 @@
 </template>
 
 <script>
-import AppHeading from "./app-heading";
+import AppTitle from "./app-title";
 import AppHomeContent from "./app-home-content";
 
 export default {
   components: {
-    AppHeading,
+    AppTitle,
     AppHomeContent
   }
 };

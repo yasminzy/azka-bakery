@@ -1,5 +1,5 @@
 <template>
-<div class="bg-light d-flex flex-column mh-100" id="top">
+<div class="d-flex flex-column mh-100" id="top">
   <app-nav />
   <router-view data-aos="fade" />
   <app-footer />
