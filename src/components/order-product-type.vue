@@ -3,7 +3,7 @@
   <h3 class="font-weight-bold h5 mb-4 text-center text-uppercase">{{ title }}</h3>
 
   <ul class="list-group mb-5 wrapper">
-    <li class="bg-transparent border-0 list-group-item text-center" v-for="(item, index) in typeFilter(menu, type)" v-bind:key="index">
+    <li class="bg-transparent border-0 list-group-item text-center" v-for="item in typeFilter(menu, type)" v-bind:key="item.id">
       <div>
         <p class="font-weight-bold mb-1">{{ item.name }}</p>
 
