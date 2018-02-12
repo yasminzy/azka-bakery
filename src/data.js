@@ -1,4 +1,4 @@
-const menu = [
+const products = [
   {
     id: 1,
     name: "Carrot Cake",
@@ -155,4 +155,4 @@ const menu = [
   }
 ];
 
-export { menu };
+export { products };

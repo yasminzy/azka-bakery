@@ -13,6 +13,7 @@
     "hover.css": "^2.2.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.13.0",
+    "prerender-spa-plugin": "^2.1.0",
     "vue": "^2.5.13",
     "vue-router": "^3.0.1"
   },
@@ -26,12 +27,22 @@
     "sass-loader": "^6.0.6",
     "vue-template-compiler": "^2.5.13"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": ["vue-cli-service lint", "git add"],
-    "*.vue": ["vue-cli-service lint", "git add"]
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   }
 }

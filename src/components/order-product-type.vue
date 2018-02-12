@@ -3,7 +3,7 @@
   <h3 class="font-weight-bold h5 mb-4 text-center text-uppercase">{{ title }}</h3>
 
   <ul class="list-group mb-5 wrapper">
-    <li class="bg-transparent border-0 list-group-item text-center" v-for="item in typeFilter(menu, type)" v-bind:key="item.id">
+    <li class="bg-transparent border-0 list-group-item text-center" v-for="item in typeFilter(products, type)" v-bind:key="item.id">
       <div>
         <p class="font-weight-bold mb-1">{{ item.name }}</p>
 
@@ -19,7 +19,7 @@
           data-item-url="https://bakery-azka.netlify.com"
           v-bind:data-item-description="item.description"
           v-bind:data-item-categories="item.type">
-              Buy
+            Buy
         </button>
       </div>
     </li>
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import { menu } from "@/data";
+import { products } from "@/data";
 
 export default {
   props: {
@@ -43,7 +43,7 @@ export default {
   },
   data() {
     return {
-      menu
+      products
     };
   },
   methods: {
