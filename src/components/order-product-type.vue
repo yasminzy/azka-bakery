@@ -16,7 +16,7 @@
           v-bind:data-item-id="item.id"
           v-bind:data-item-name="item.name"
           v-bind:data-item-price="item.price + '.00'"
-          data-item-url="https://bakery-azka.netlify.com"
+          data-item-url="https://bakery-azka.netlify.com/order"
           v-bind:data-item-description="item.description"
           v-bind:data-item-categories="item.type">
               Buy
@@ -49,6 +49,12 @@ export default {
   methods: {
     typeFilter(input, word) {
       return input.filter(item => item.type == word);
+    }
+  },
+  filters: {
+    removeDecimal(input) {
+      input = input.replace(/.00/, "");
+      return input;
     }
   }
 };
