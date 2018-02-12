@@ -9,14 +9,13 @@
 
         <p class="small mb-1 text-muted">{{ item.description }}</p>
 
-        <!-- <p class="mb-0">${{ item.price }}</p> -->
         <p>${{ item.price }}</p>
 
         <button
           class="btn btn-outline-primary snipcart-add-item"
           v-bind:data-item-id="item.id"
           v-bind:data-item-name="item.name"
-          v-bind:data-item-price="item.price"
+          v-bind:data-item-price="item.price + '.00'"
           data-item-url="https://bakery-azka.netlify.com"
           v-bind:data-item-description="item.description"
           v-bind:data-item-categories="item.type">

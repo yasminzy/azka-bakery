@@ -3,7 +3,7 @@
   <app-banner cursive="easy" title="contact" />
 
   <div class="container py-5 text-center">
-    <form class="mx-auto" name="contact-azka" action="https://formspree.io/yasmin@yasminzy.com" method="POST" data-aos="slide-up">
+    <form class="mx-auto" name="contact-azka" action="https://formspree.io/yzyusrina@ymail.com" method="POST" data-aos="slide-up">
       <div class="form-group mb-5">
         <label for="name">Name</label>
         <input class="border-left-0 border-right-0 border-top-0 form-control" id="name" type="text" name="name" required>

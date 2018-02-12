@@ -1,7 +1,7 @@
 <template>
 <footer class="mt-auto">
-  <div class="text-center" data-aos="flip-up">
-    <a class="btn btn-light rounded-circle text-muted top" href="#top">
+  <div class="text-center d-flex justify-content-center" data-aos="flip-up">
+    <a class="bg-white btn rounded-circle text-muted top" href="#top">
       <i class="icon ion-chevron-up"></i><br>
       TOP
     </a>
@@ -101,8 +101,10 @@ export default {
 .top {
   min-height: 3rem;
   min-width: 3rem;
-  position: relative;
-  top: 1.5rem;
+  position: absolute;
+  top: -31px;
+  /* left: 0;
+  right: 0; */
 }
 
 .bg-black {

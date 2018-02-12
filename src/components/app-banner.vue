@@ -60,10 +60,6 @@ export default {
   background-image: url("../assets/contact.jpg");
 }
 
-#sent {
-  background-image: url("../assets/sent.jpg");
-}
-
 .container-fluid {
   background: fixed center center no-repeat;
   background-size: cover;

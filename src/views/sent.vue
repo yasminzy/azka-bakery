@@ -1,17 +1,21 @@
 <template>
-<app-banner cursive="message" title="sent" v-bind:height="100" />
+<div class="container-fluid d-flex justify-content-center align-items-center mh-100">
+  <app-title cursive="message" title="sent" />
+</div>
 </template>
 
 <script>
-import AppBanner from "@/components/app-banner";
+import AppTitle from "@/components/app-title";
 
 export default {
   components: {
-    AppBanner
+    AppTitle
   }
 };
 </script>
 
 <style scoped>
-
+.container-fluid {
+  background: url("../assets/sent.jpg");
+}
 </style>
