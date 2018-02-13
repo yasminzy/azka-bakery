@@ -1,48 +1,30 @@
 {
-  "name": "restaurant-azka",
-  "version": "0.1.0",
+  "name": "bakery-azka",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "Yasmin Zulfati Yusrina <yzyusrina@ymail.com>",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "HOST=127.0.0.1 nuxt",
+    "build": "nuxt build",
+    "start": "HOST=127.0.0.1 nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
   "dependencies": {
-    "aos": "^2.2.0",
-    "bootstrap": "^4.0.0",
     "hover.css": "^2.2.1",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.13.0",
-    "prerender-spa-plugin": "^2.1.0",
-    "vue": "^2.5.13",
-    "vue-router": "^3.0.1"
+    "nuxt": "^1.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-alpha.11",
-    "@vue/cli-plugin-eslint": "^3.0.0-alpha.11",
-    "@vue/cli-service": "^3.0.0-alpha.11",
-    "@vue/eslint-config-prettier": "^3.0.0-alpha.11",
-    "lint-staged": "^6.0.0",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-vue": "^4.0.0",
     "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6",
-    "vue-template-compiler": "^2.5.13"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "sass-loader": "^6.0.6"
   }
 }
