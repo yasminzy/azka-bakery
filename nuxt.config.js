@@ -70,10 +70,16 @@ module.exports = {
           exclude: /(node_modules)/
         });
       }
-    }
+    },
+    vendor: ["aos", "vue2-google-maps"]
   },
   css: [
+    "aos/dist/aos.css",
     "~/assets/css/custom-bootstrap.css",
     "~/assets/snipcart/custom-snipcart.css"
+  ],
+  plugins: [
+    { src: "~/plugins/aos.js", ssr: false },
+    { src: "~/plugins/vue2-google-maps.js" }
   ]
 };

@@ -4,7 +4,7 @@
     <div class="col-lg-6 text-center" data-aos="fade-left">
       <app-title class="text-dark" cursive="Discover" title="OUR STORY" color="dark" />
 
-      <app-home-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="about" link="about us" />
+      <app-index-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="about" link="about us" />
     </div>
 
     <div class="col-lg-6 pic" data-aos="fade-right">
@@ -18,12 +18,12 @@
 
 <script>
 import AppTitle from "./app-title";
-import AppHomeContent from "./app-home-content";
+import AppIndexContent from "./app-index-content";
 
 export default {
   components: {
     AppTitle,
-    AppHomeContent
+    AppIndexContent
   }
 };
 </script>

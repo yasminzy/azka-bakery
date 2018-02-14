@@ -1,3 +1,22 @@
+const accounts = [
+  {
+    icon: "social-facebook",
+    link: "https://www.facebook.com"
+  },
+  {
+    icon: "social-instagram",
+    link: "https://www.instagram.com"
+  },
+  {
+    icon: "social-pinterest",
+    link: "https://www.pinterest.com"
+  },
+  {
+    icon: "social-twitter",
+    link: "https://twitter.com"
+  }
+];
+
 const products = [
   {
     id: 1,
@@ -155,4 +174,4 @@ const products = [
   }
 ];
 
-export { products };
+export { accounts, products };

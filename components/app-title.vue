@@ -2,7 +2,7 @@
 <div>
   <span class="cursive m-0 text-capitalize text-primary">{{ cursive }}</span>
 
-  <h2 v-if="!home" v-bind:class="'font-weight-bold text-uppercase text-' + color">{{ title }}</h2>
+  <h2 v-if="!index" v-bind:class="'font-weight-bold text-uppercase text-' + color">{{ title }}</h2>
 
   <h1 v-else v-bind:class="'font-weight-bold text-uppercase text-' + color">{{ title }}</h1>
 </div>
@@ -23,7 +23,7 @@ export default {
       type: String,
       default: "white"
     },
-    home: {
+    index: {
       type: Boolean,
       default: false
     }

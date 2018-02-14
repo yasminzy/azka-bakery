@@ -16,7 +16,7 @@ export default {
 
 <style scoped>
 .container-fluid {
-  background: url("~/assets/img/sent.jpg");
+  background-image: url("~/assets/img/sent.jpg");
   min-height: calc(100vh + 31px);
 }
 </style>

@@ -1,28 +1,28 @@
 <template>
 <div>
-  <home-header />
-  <home-about />
+  <index-header />
+  <index-about />
   <app-banner cursive="tasteful" title="recipes" />
-  <home-menu />
+  <index-products />
   <app-banner cursive="the perfect" title="blend" />
-  <home-reservation />
+  <index-order />
 </div>
 </template>
 
 <script>
-import HomeAbout from "~/components/home-about";
+import IndexAbout from "~/components/index-about";
 import AppBanner from "~/components/app-banner";
-import HomeHeader from "~/components/home-header";
-import HomeMenu from "~/components/home-menu";
-import HomeReservation from "~/components/home-reservation";
+import IndexHeader from "~/components/index-header";
+import IndexProducts from "~/components/index-products";
+import IndexOrder from "~/components/index-order";
 
 export default {
   components: {
-    HomeAbout,
+    IndexAbout,
     AppBanner,
-    HomeHeader,
-    HomeMenu,
-    HomeReservation
+    IndexHeader,
+    IndexProducts,
+    IndexOrder
   }
 };
 </script>
