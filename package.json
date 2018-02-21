@@ -16,11 +16,11 @@
     "aos": "^2.2.0",
     "hover.css": "^2.2.1",
     "nuxt": "^1.0.0",
-    "vue2-google-maps": "^0.8.4"
+    "vue2-google-maps": "^0.8.6"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.15.0",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",

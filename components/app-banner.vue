@@ -1,5 +1,5 @@
 <template>
-<div v-bind:class="'container-fluid d-flex justify-content-center align-items-center py-5 mh-' + height" v-bind:id="urlize(title)">
+<div v-bind:class="'container-fluid d-flex justify-content-center align-items-center parallax py-5 mh-' + height" v-bind:id="urlize(title)">
   <app-title class="text-center" v-show="!empty" v-bind:cursive="cursive" v-bind:title="title" data-aos="fade" />
 </div>
 </template>
@@ -60,9 +60,13 @@ export default {
   background-image: url("~/assets/img/contact.jpg");
 }
 
-.container-fluid {
-  background: fixed center center no-repeat;
+.parallax {
+  background: center center no-repeat;
   background-size: cover;
+
+  @media (min-width: 576px) {
+    background-attachment: fixed;
+  }
 }
 
 span {

@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 .container-fluid {
-  background: url("~/assets/img/header.jpg") no-repeat center center;
+  background: url("~/assets/img/header.jpg") center center no-repeat;
   background-size: cover;
   padding-top: 7.5rem;
 
