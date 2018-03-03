@@ -1,22 +1,5 @@
-# nuxt-project
+# Azka Bakery
 
-> Nuxt.js project
+> Sample ecommerce website
 
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+Built with [Nuxt](https://nuxtjs.org), [Bootstrap](https://getbootstrap.com), and [Snipcart](https://snipcart.com).
