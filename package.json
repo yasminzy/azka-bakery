@@ -15,7 +15,7 @@
   "dependencies": {
     "aos": "^2.2.0",
     "nuxt": "^1.4.0",
-    "vue2-google-maps": "^0.8.10"
+    "vue2-google-maps": "^0.8.11"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
@@ -25,7 +25,7 @@
     "eslint-loader": "^1.7.1",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^4.3.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.8.1",
     "sass-loader": "^6.0.7"
   }
 }
