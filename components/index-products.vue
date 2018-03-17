@@ -3,7 +3,7 @@
   <div class="container row mx-auto">
     <div class="col-lg-6 p-0 pic" data-aos="fade-up-left">
       <div class="img-wrapper" v-for="(item, index) in menu" v-bind:key="index">
-        <img class="hvr-grow img-fluid" v-bind:src="'/img/' + urlize(item) + '.jpg'" v-bind:alt="item">
+        <img class="hvr-grow img-fluid" v-lazy="'/img/' + urlize(item) + '.jpg'" v-bind:alt="item">
       </div>
     </div>
 

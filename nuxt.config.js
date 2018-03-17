@@ -75,7 +75,7 @@ module.exports = {
         });
       }
     },
-    vendor: ["aos", "vue2-google-maps"]
+    vendor: ["aos", "vue-lazyload", "vue2-google-maps"]
   },
   css: [
     "aos/dist/aos.css",
@@ -84,6 +84,12 @@ module.exports = {
   ],
   plugins: [
     { src: "~/plugins/aos.js", ssr: false },
-    { src: "~/plugins/vue2-google-maps.js" }
-  ]
+    "~/plugins/vue-lazyload.js",
+    "~/plugins/vue2-google-maps.js"
+  ],
+  router: {
+    scrollBehavior: function(to, from, savedPosition) {
+      return { x: 0, y: 0 };
+    }
+  }
 };
