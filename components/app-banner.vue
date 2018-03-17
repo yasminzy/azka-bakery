@@ -1,6 +1,6 @@
 <template>
 <div v-bind:class="'container-fluid d-flex justify-content-center align-items-center parallax py-5 mh-' + height" v-bind:id="urlize(title)">
-  <app-title class="text-center" v-show="!empty" v-bind:cursive="cursive" v-bind:title="title" data-aos="fade" />
+  <app-title class="text-center" v-show="!empty" v-bind:cursive="cursive" v-bind:title="title" data-aos="fade"/>
 </div>
 </template>
 

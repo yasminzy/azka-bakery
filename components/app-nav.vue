@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar navbar-expand-md navbar-dark w-100" data-aos="fade-down" data-aos-duration="800">
   <router-link class="navbar-brand" to="/">
-    <img class="d-inline-block align-top" src="~/assets/img/logo.png" alt="Logo" width="30" height="30" />
+    <img class="d-inline-block align-top" src="~/assets/img/logo.png" alt="Logo" width="30" height="30"/>
 
     <span class="name text-light font-weight-bold">AZKA</span>
   </router-link>

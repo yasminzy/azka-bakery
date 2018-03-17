@@ -1,6 +1,6 @@
 <template>
 <div class="container-fluid d-flex justify-content-center align-items-center">
-  <app-title cursive="message" title="sent" />
+  <app-title cursive="message" title="sent"/>
 </div>
 </template>
 

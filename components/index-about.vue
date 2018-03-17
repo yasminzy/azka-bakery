@@ -2,9 +2,9 @@
 <div class="container-fluid py-5 d-flex justify-content-center">
   <div class="container mx-auto row">
     <div class="col-lg-6 text-center" data-aos="fade-left">
-      <app-title class="text-dark" cursive="Discover" title="OUR STORY" color="dark" />
+      <app-title class="text-dark" cursive="Discover" title="OUR STORY" color="dark"/>
 
-      <app-index-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="about" link="about us" />
+      <app-index-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="about" link="about us"/>
     </div>
 
     <div class="col-lg-6 pic" data-aos="fade-right">

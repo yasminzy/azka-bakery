@@ -1,11 +1,11 @@
 <template>
 <div>
-  <index-header />
-  <index-about />
-  <app-banner cursive="tasteful" title="recipes" />
-  <index-products />
-  <app-banner cursive="the perfect" title="blend" />
-  <index-order />
+  <index-header/>
+  <index-about/>
+  <app-banner cursive="tasteful" title="recipes"/>
+  <index-products/>
+  <app-banner cursive="the perfect" title="blend"/>
+  <index-order/>
 </div>
 </template>
 

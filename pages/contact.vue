@@ -1,7 +1,7 @@
 <template>
 <div class="mh-100">
-  <app-banner cursive="easy" title="contact" />
-  <contact-content />
+  <app-banner cursive="easy" title="contact"/>
+  <contact-content/>
 </div>
 </template>
 

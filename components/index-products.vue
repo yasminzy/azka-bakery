@@ -8,9 +8,9 @@
     </div>
 
     <div class="col-lg-6 text-center" data-aos="fade-up-right">
-      <app-title class="text-dark" cursive="delightful" title="products" color="dark" />
+      <app-title class="text-dark" cursive="delightful" title="products" color="dark"/>
 
-      <app-index-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="order" link="view all products" />
+      <app-index-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="order" link="view all products"/>
     </div>
   </div>
 </div>

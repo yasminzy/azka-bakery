@@ -1,11 +1,11 @@
 <template>
 <div class="container mx-auto py-5 wrapper">
   <div class="d-lg-flex flex-column justify-content-between h-100" data-aos="fade-up-right">
-    <contact-tel-acc />
-    <contact-map />
+    <contact-tel-acc/>
+    <contact-map/>
   </div>
 
-  <contact-form data-aos="fade-up-left" />
+  <contact-form data-aos="fade-up-left"/>
 </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
 <div class="container-fluid mh-100">
   <div class="container text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-    <app-title cursive="welcome" title="the azka" v-bind:index="true" />
+    <app-title cursive="welcome" title="the azka" v-bind:index="true"/>
 
     <hr class="text-primary">
 
