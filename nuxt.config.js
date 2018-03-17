@@ -1,7 +1,4 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
   head: {
     title: "Azka Bakery",
     meta: [
@@ -11,10 +8,6 @@ module.exports = {
         hid: "description",
         name: "description",
         content: "Sample ecommerce website by Yasmin ZY"
-      },
-      {
-        name: "http-equiv",
-        content: "default-src 'self'; font-src 'self' data: fonts.gstatic.com;"
       }
     ],
     link: [
@@ -54,17 +47,13 @@ module.exports = {
       }
     ]
   },
-  /*
-  ** Customize the progress bar color
-  */
+  css: [
+    "aos/dist/aos.css",
+    "~/assets/css/custom-bootstrap.css",
+    "~/assets/snipcart/custom-snipcart.css"
+  ],
   loading: { color: "#ff9800" },
-  /*
-  ** Build configuration
-  */
   build: {
-    /*
-    ** Run ESLint on save
-    */
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
@@ -77,11 +66,6 @@ module.exports = {
     },
     vendor: ["aos", "vue-lazyload", "vue2-google-maps"]
   },
-  css: [
-    "aos/dist/aos.css",
-    "~/assets/css/custom-bootstrap.css",
-    "~/assets/snipcart/custom-snipcart.css"
-  ],
   plugins: [
     { src: "~/plugins/aos.js", ssr: false },
     "~/plugins/vue-lazyload.js",
