@@ -15,6 +15,7 @@
       <textarea class="form-control" id="message" rows="3" name="message" placeholder="Write your message here" required></textarea>
     </div>
 
+    <input type="hidden" name="_subject" value="Azka - Contact"/>
     <input type="hidden" name="_next" value="https://azka.netlify.com/sent"/>
 
     <button type="submit" class="btn btn-block btn-primary text-white">
