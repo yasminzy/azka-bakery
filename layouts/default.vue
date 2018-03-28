@@ -65,6 +65,7 @@ p {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
+
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {

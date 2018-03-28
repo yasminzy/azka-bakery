@@ -67,9 +67,9 @@ module.exports = {
     vendor: ["aos", "vue-lazyload", "vue2-google-maps"]
   },
   plugins: [
-    { src: "~/plugins/aos.js", ssr: false },
-    "~/plugins/vue-lazyload.js",
-    "~/plugins/vue2-google-maps.js"
+    { src: "~/plugins/aos", ssr: false },
+    "~/plugins/vue-lazyload",
+    "~/plugins/vue2-google-maps"
   ],
   router: {
     scrollBehavior: function(to, from, savedPosition) {
