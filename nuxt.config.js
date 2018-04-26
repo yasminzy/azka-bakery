@@ -31,11 +31,7 @@ module.exports = {
         body: true
       },
       {
-        src:
-          "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js",
-        integrity:
-          "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl",
-        crossorigin: "anonymous",
+        src: "~/bootstrap/dist/js/bootstrap.min.js",
         body: true
       },
       {
@@ -47,11 +43,7 @@ module.exports = {
       }
     ]
   },
-  css: [
-    "aos/dist/aos.css",
-    "~/assets/css/custom-bootstrap.css",
-    "~/assets/snipcart/custom-snipcart.css"
-  ],
+  css: ["aos/dist/aos.css", "~/assets/snipcart/custom-snipcart.css"],
   loading: { color: "#ff9800" },
   build: {
     extend(config, { isDev, isClient }) {

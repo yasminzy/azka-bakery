@@ -18,7 +18,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "../assets/scss/custom-bootstrap";
+
 :root {
   scroll-behavior: smooth;
 }
@@ -28,7 +30,7 @@ export default {
 }
 
 ::selection {
-  background-color: #ff9800;
+  background-color: $primary;
   color: white;
 }
 

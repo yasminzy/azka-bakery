@@ -14,19 +14,20 @@
   },
   "dependencies": {
     "aos": "^2.2.0",
+    "bootstrap": "^4.1.0",
     "nuxt": "^1.4.0",
-    "vue2-google-maps": "^0.8.11"
+    "vue2-google-maps": "^0.8.12"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.2",
+    "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-vue": "^4.4.0",
-    "node-sass": "^4.8.3",
+    "eslint-plugin-vue": "^4.5.0",
+    "node-sass": "^4.9.0",
     "sass-loader": "^6.0.7",
-    "vue-lazyload": "^1.2.2"
+    "vue-lazyload": "^1.2.3"
   }
 }
