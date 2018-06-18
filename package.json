@@ -13,9 +13,9 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "aos": "^2.3.0",
+    "aos": "^2.2.0",
     "bootstrap": "^4.1.1",
-    "nuxt": "^1.4.0",
+    "nuxt": "^1.4.1",
     "vue2-google-maps": "^0.8.12"
   },
   "devDependencies": {
@@ -28,6 +28,6 @@
     "eslint-plugin-vue": "^4.5.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^6.0.7",
-    "vue-lazyload": "^1.2.3"
+    "vue-lazyload": "^1.2.6"
   }
 }
