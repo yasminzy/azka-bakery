@@ -19,7 +19,7 @@
     <input type="hidden" name="_next" value="https://azka.netlify.com/sent"/>
 
     <button type="submit" class="btn btn-block btn-primary text-white">
-      <i class="icon ion-paper-airplane"></i>
+      <i class="icon ion-md-paper-plane"></i>
       SEND
     </button>
   </form>

@@ -2,7 +2,7 @@
 <footer class="mt-auto">
   <div class="text-center d-flex justify-content-center" data-aos="flip-up">
     <a class="bg-white btn rounded-circle text-muted top" href="#top">
-      <i class="icon ion-chevron-up"></i><br>
+      <i class="icon ion-md-arrow-dropup"></i><br>
       TOP
     </a>
   </div>

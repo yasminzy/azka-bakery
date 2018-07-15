@@ -13,20 +13,20 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "aos": "^2.2.0",
-    "bootstrap": "^4.1.1",
+    "aos": "^2.3.3",
+    "bootstrap": "^4.1.2",
     "nuxt": "^1.4.1",
     "vue2-google-maps": "^0.8.12"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
+    "babel-eslint": "^8.2.6",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-vue": "^4.5.0",
-    "node-sass": "^4.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-vue": "^4.7.0",
+    "node-sass": "^4.9.2",
     "sass-loader": "^6.0.7",
     "vue-lazyload": "^1.2.6"
   }

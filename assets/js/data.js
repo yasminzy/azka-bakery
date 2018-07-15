@@ -1,18 +1,18 @@
 const accounts = [
   {
-    icon: "social-facebook",
+    icon: "logo-facebook",
     link: "https://www.facebook.com"
   },
   {
-    icon: "social-instagram",
+    icon: "logo-instagram",
     link: "https://www.instagram.com"
   },
   {
-    icon: "social-pinterest",
+    icon: "logo-pinterest",
     link: "https://www.pinterest.com"
   },
   {
-    icon: "social-twitter",
+    icon: "logo-twitter",
     link: "https://twitter.com"
   }
 ];
