@@ -1,8 +1,11 @@
 <template>
-<div class="mh-100">
-  <app-banner cursive="easy" title="contact"/>
-  <contact-content/>
-</div>
+  <div class="mh-100">
+    <app-banner
+      cursive="easy"
+      title="contact"/>
+      
+    <contact-content/>
+  </div>
 </template>
 
 <script>
@@ -16,6 +19,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-</style>

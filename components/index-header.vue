@@ -1,13 +1,20 @@
 <template>
-<div class="container-fluid mh-100">
-  <div class="container text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-    <app-title cursive="welcome" title="the azka" v-bind:index="true"/>
+  <div class="container-fluid mh-100">
+    <div
+      class="container text-center"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-delay="400">
+      <app-title
+        v-bind:index="true"
+        cursive="welcome"
+        title="the azka"/>
 
-    <hr class="text-primary">
+      <hr class="text-primary">
 
-    <small class="h6 text-white">BAKERY &amp; PASTRY</small>
+      <small class="h6 text-white">BAKERY &amp; PASTRY</small>
+    </div>
   </div>
-</div>
 </template>
 
 <script>

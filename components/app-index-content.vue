@@ -1,13 +1,15 @@
 <template>
-<div class="w-100">
-  <p class="text-muted">*</p>
+  <div class="w-100">
+    <p class="text-muted">*</p>
 
-  <p class="text-muted">{{ content }}</p>
+    <p class="text-muted">{{ content }}</p>
 
-  <router-link class="text-uppercase text-primary" v-bind:to="to">
-    {{ link }}
-  </router-link>
-</div>
+    <router-link
+      v-bind:to="to"
+      class="text-uppercase text-primary">
+      {{ link }}
+    </router-link>
+  </div>
 </template>
 
 <script>

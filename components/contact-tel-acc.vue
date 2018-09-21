@@ -1,24 +1,33 @@
 <template>
-<div class="tel d-lg-flex justify-content-between align-items-center mb-5 mb-lg-0 ">
-  <ul class="list-unstyled mb-3 mb-lg-0">
-    <li v-for="(item, index) in contacts" v-bind:key="index">
-      <a class="text-dark" v-bind:href="item.link">
-        <p class="mb-1 mb-lg-0">
-          <i v-bind:class="'icon ion-' + item.icon"></i>
-          {{ item.text }}
-        </p>
-      </a>
-    </li>
-  </ul>
+  <div class="tel d-lg-flex justify-content-between align-items-center mb-5 mb-lg-0 ">
+    <ul class="list-unstyled mb-3 mb-lg-0">
+      <li
+        v-for="(item, index) in contacts"
+        v-bind:key="index">
+        <a
+          v-bind:href="item.link"
+          class="text-dark">
+          <p class="mb-1 mb-lg-0">
+            <i v-bind:class="'icon ion-' + item.icon"/>
+            {{ item.text }}
+          </p>
+        </a>
+      </li>
+    </ul>
 
-  <ul class="list-unstyled d-flex justify-content-center align-items-center mb-0">
-    <li class="hvr-grow-rotate" v-for="(item, index) in accounts" v-bind:key="index">
-      <a class="text-dark" v-bind:href="item.link">
-        <i v-bind:class="'h3 icon ion-' + item.icon + ' px-3'"></i>
-      </a>
-    </li>
-  </ul>
-</div>
+    <ul class="list-unstyled d-flex justify-content-center align-items-center mb-0">
+      <li
+        v-for="(item, index) in accounts"
+        v-bind:key="index"
+        class="hvr-grow-rotate">
+        <a
+          v-bind:href="item.link"
+          class="text-dark">
+          <i v-bind:class="'h3 icon ion-' + item.icon + ' px-3'"/>
+        </a>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>

@@ -1,19 +1,36 @@
 <template>
-<div class="container-fluid py-5 d-flex justify-content-center">
-  <div class="container row mx-auto">
-    <div class="col-lg-6 text-center" data-aos="fade-down-right">
-      <app-title class="text-dark" cursive="culinary" title="delight" color="dark"/>
+  <div class="container-fluid py-5 d-flex justify-content-center">
+    <div class="container row mx-auto">
+      <div
+        class="col-lg-6 text-center"
+        data-aos="fade-down-right">
+        <app-title
+          cursive="culinary"
+          title="delight"
+          color="dark"
+          class="text-dark"/>
 
-      <app-index-content content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?" to="order" link="order now"/>
-    </div>
+        <app-index-content
+          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?"
+          to="order"
+          link="order now"/>
+      </div>
 
-    <div class="col-lg-6 pic" data-aos="fade-down-left">
-      <div class="img-wrapper" v-for="(item, index) in menu" v-bind:key="index">
-        <img class="hvr-grow img-fluid" v-lazy="'/img/' + urlize(item) + '.jpg'" v-bind:alt="item">
+      <div
+        class="col-lg-6 pic"
+        data-aos="fade-down-left">
+        <div
+          v-for="(item, index) in menu"
+          v-bind:key="index"
+          class="img-wrapper">
+          <img
+            v-lazy="'/img/' + urlize(item) + '.jpg'"
+            v-bind:alt="item"
+            class="hvr-grow img-fluid">
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>

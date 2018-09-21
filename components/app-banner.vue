@@ -1,7 +1,9 @@
 <template>
-<div v-bind:class="'container-fluid d-flex justify-content-center align-items-center parallax py-5 mh-' + height" v-bind:id="urlize(title)">
-  <app-title class="text-center" v-show="!empty" v-bind:cursive="cursive" v-bind:title="title" data-aos="fade"/>
-</div>
+  <div
+    v-bind:id="urlize(title)"
+    v-bind:class="'container-fluid d-flex justify-content-center align-items-center parallax py-5 mh-' + height"
+    title="title"
+    data-aos="fade"/>
 </template>
 
 <script>
@@ -14,7 +16,8 @@ export default {
   },
   props: {
     cursive: {
-      type: String
+      type: String,
+      default: ""
     },
     title: {
       type: String,

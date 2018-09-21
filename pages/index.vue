@@ -1,12 +1,21 @@
 <template>
-<div>
-  <index-header/>
-  <index-about/>
-  <app-banner cursive="tasteful" title="recipes"/>
-  <index-products/>
-  <app-banner cursive="the perfect" title="blend"/>
-  <index-order/>
-</div>
+  <div>
+    <index-header/>
+
+    <index-about/>
+
+    <app-banner
+      cursive="tasteful"
+      title="recipes"/>
+
+    <index-products/>
+
+    <app-banner
+      cursive="the perfect"
+      title="blend"/>
+      
+    <index-order/>
+  </div>
 </template>
 
 <script>
@@ -26,6 +35,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-</style>
