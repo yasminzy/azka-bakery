@@ -1,4 +1,7 @@
+const pkg = require("./package");
+
 module.exports = {
+  mode: "universal",
   head: {
     title: "Azka Bakery",
     meta: [
@@ -7,7 +10,7 @@ module.exports = {
       {
         hid: "description",
         name: "description",
-        content: "Sample ecommerce website by Yasmin ZY"
+        content: pkg.description
       }
     ],
     link: [
@@ -16,10 +19,6 @@ module.exports = {
         rel: "stylesheet",
         href:
           "https://fonts.googleapis.com/css?family=Dancing+Script|Roboto:400,700"
-      },
-      {
-        rel: "stylesheet",
-        href: "https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css"
       }
     ],
     script: [
@@ -29,10 +28,8 @@ module.exports = {
         crossorigin: "anonymous",
         body: true
       },
-      {
-        src: "~/bootstrap/dist/js/bootstrap.min.js",
-        body: true
-      },
+      { src: "~/bootstrap/dist/js/bootstrap.min.js", body: true },
+      { src: "https://unpkg.com/ionicons/dist/ionicons.js", body: true },
       {
         src: "https://cdn.snipcart.com/scripts/2.0/snipcart.js",
         id: "snipcart",
@@ -42,26 +39,25 @@ module.exports = {
       }
     ]
   },
-  css: ["aos/dist/aos.css", "~/assets/snipcart/custom-snipcart.css"],
   loading: { color: "#ff9800" },
-  build: {
-    extend(config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: "pre",
-          test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/
-        });
-      }
-    },
-    vendor: ["aos", "vue-lazyload", "vue2-google-maps"]
-  },
+  css: ["aos/dist/aos.css", "~/assets/snipcart/custom-snipcart.css"],
   plugins: [
     { src: "~/plugins/aos", ssr: false },
     "~/plugins/vue-lazyload",
     "~/plugins/vue2-google-maps"
   ],
+  build: {
+    extend(config, ctx) {
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
+    },
+  },
   router: {
     scrollBehavior: function(to, from, savedPosition) {
       return { x: 0, y: 0 };
