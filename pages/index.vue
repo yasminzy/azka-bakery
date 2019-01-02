@@ -1,20 +1,16 @@
 <template>
   <div>
-    <index-header/>
+    <IndexHeader />
 
-    <index-about/>
+    <IndexAbout />
 
-    <app-banner
-      cursive="tasteful"
-      title="recipes"/>
+    <AppBanner cursive="tasteful" title="recipes" />
 
-    <index-products/>
+    <IndexProducts />
 
-    <app-banner
-      cursive="the perfect"
-      title="blend"/>
-      
-    <index-order/>
+    <AppBanner cursive="the perfect" title="blend" />
+
+    <IndexOrder />
   </div>
 </template>
 

@@ -1,32 +1,32 @@
 <template>
   <div class="container-fluid py-5 d-flex justify-content-center">
     <div class="container row mx-auto">
-      <div
-        class="col-lg-6 text-center"
-        data-aos="fade-down-right">
-        <app-title
+      <div class="col-lg-6 text-center" data-aos="fade-down-right">
+        <AppTitle
+          class="text-dark"
+          color="dark"
           cursive="culinary"
           title="delight"
-          color="dark"
-          class="text-dark"/>
+        />
 
-        <app-index-content
+        <AppIndexContent
           content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, consequatur reprehenderit rem beatae accusantium possimus sunt cupiditate officiis quas tenetur?"
+          link="order now"
           to="order"
-          link="order now"/>
+        />
       </div>
 
-      <div
-        class="col-lg-6 pic"
-        data-aos="fade-down-left">
+      <div class="col-lg-6 pic" data-aos="fade-down-left">
         <div
           v-for="(item, index) in menu"
           v-bind:key="index"
-          class="img-wrapper">
+          class="img-wrapper"
+        >
           <img
             v-lazy="'/img/' + urlize(item) + '.jpg'"
             v-bind:alt="item"
-            class="hvr-grow img-fluid">
+            class="hvr-grow img-fluid"
+          />
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@ export default {
 <style lang="scss" scoped>
 .pic {
   display: grid;
-  grid-gap: 15px;
+  gap: 15px;
   margin-top: 3rem;
 
   @media (min-width: 576px) {

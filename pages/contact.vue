@@ -1,10 +1,8 @@
 <template>
   <div class="mh-100">
-    <app-banner
-      cursive="easy"
-      title="contact"/>
-      
-    <contact-content/>
+    <AppBanner cursive="easy" title="contact" />
+
+    <ContactContent />
   </div>
 </template>
 

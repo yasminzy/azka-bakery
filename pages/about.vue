@@ -1,19 +1,13 @@
 <template>
   <div class="mh-100">
-    <app-banner
-      cursive="discover"
-      title="about us"/>
-    <about-history data-aos="fade-up"/>
+    <AppBanner cursive="discover" title="about us" />
+    <AboutHistory data-aos="fade-up" />
 
-    <about-quote data-aos="fade-down"/>
+    <AboutQuote data-aos="fade-down" />
 
-    <app-banner
-      v-bind:height="50"
-      cursive=""
-      title="bakery"
-      empty/>
-      
-    <about-today data-aos="fade-left"/>
+    <AppBanner v-bind:height="50" title="bakery" cursive empty />
+
+    <AboutToday data-aos="fade-left" />
   </div>
 </template>
 

@@ -6,13 +6,12 @@
 
     <h2
       v-if="!index"
-      v-bind:class="'font-weight-bold text-uppercase text-' + color">
+      v-bind:class="'font-weight-bold text-uppercase text-' + color"
+    >
       {{ title }}
     </h2>
 
-    <h1
-      v-else
-      v-bind:class="'font-weight-bold text-uppercase text-' + color">
+    <h1 v-else v-bind:class="'font-weight-bold text-uppercase text-' + color">
       {{ title }}
     </h1>
   </div>

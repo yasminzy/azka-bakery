@@ -1,8 +1,6 @@
 <template>
   <div class="container-fluid d-flex justify-content-center align-items-center">
-    <app-title
-      cursive="message"
-      title="sent"/>
+    <AppTitle cursive="message" title="sent" />
   </div>
 </template>
 
@@ -18,7 +16,7 @@ export default {
 
 <style scoped>
 .container-fluid {
-  background-image: url("~/assets/img/sent.jpg");
+  background-image: url("~assets/img/sent.jpg");
   min-height: calc(100vh + 31px);
 }
 </style>

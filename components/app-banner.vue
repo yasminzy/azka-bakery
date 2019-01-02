@@ -1,19 +1,19 @@
 <template>
   <div
     v-bind:id="urlize(title)"
-    v-bind:class="'container-fluid d-flex justify-content-center align-items-center parallax py-5 mh-' + height"
+    v-bind:class="
+      'container-fluid d-flex justify-content-center align-items-center parallax py-5 mh-' +
+        height
+    "
     title="title"
-    data-aos="fade"/>
+    data-aos="fade "
+  />
 </template>
 
 <script>
 import { urlize } from "~/assets/js/functions";
-import AppTitle from "./app-title";
 
 export default {
-  components: {
-    AppTitle
-  },
   props: {
     cursive: {
       type: String,
@@ -40,27 +40,27 @@ export default {
 
 <style lang="scss" scoped>
 #recipes {
-  background-image: url("~/assets/img/recipes.jpg");
+  background-image: url("~assets/img/recipes.jpg");
 }
 
 #blend {
-  background-image: url("~/assets/img/blend.jpg");
+  background-image: url("~assets/img/blend.jpg");
 }
 
 #products {
-  background-image: url("~/assets/img/order.jpg");
+  background-image: url("~assets/img/order.jpg");
 }
 
 #about-us {
-  background-image: url("~/assets/img/about-us.jpg");
+  background-image: url("~assets/img/about-us.jpg");
 }
 
 #bakery {
-  background-image: url("~/assets/img/bakery.jpg");
+  background-image: url("~assets/img/bakery.jpg");
 }
 
 #contact {
-  background-image: url("~/assets/img/contact.jpg");
+  background-image: url("~assets/img/contact.jpg");
 }
 
 .parallax {

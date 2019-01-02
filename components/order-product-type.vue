@@ -1,12 +1,15 @@
 <template>
   <div class="container">
-    <h3 class="font-weight-bold h5 mb-4 text-center text-uppercase">{{ title }}</h3>
+    <h3 class="font-weight-bold h5 mb-4 text-center text-uppercase">
+      {{ title }}
+    </h3>
 
     <ul class="list-group mb-5 wrapper">
       <li
         v-for="item in typeFilter(products, type)"
         v-bind:key="item.id"
-        class="bg-transparent border-0 list-group-item text-center">
+        class="bg-transparent border-0 list-group-item text-center"
+      >
         <div>
           <p class="font-weight-bold mb-1">{{ item.name }}</p>
 
@@ -20,8 +23,9 @@
             v-bind:data-item-price="item.price"
             v-bind:data-item-description="item.description"
             v-bind:data-item-categories="item.type"
+            class="btn btn-outline-primary snipcart-add-item"
             data-item-url="https://azka.netlify.com/order"
-            class="btn btn-outline-primary snipcart-add-item">
+          >
             Buy
           </button>
         </div>
@@ -65,12 +69,12 @@ h3 {
 .wrapper {
   @media (min-width: 768px) {
     display: grid;
-    grid-column-gap: 2.5rem;
+    column-gap: 2.5rem;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: 992px) {
-    grid-column-gap: 5rem;
+    column-gap: 5rem;
   }
 }
 </style>

@@ -1,20 +1,14 @@
 <template>
   <footer class="mt-auto">
-    <div
-      class="text-center d-flex justify-content-center"
-      data-aos="flip-up">
-      <a
-        href="#top"
-        class="bg-white btn rounded-circle text-muted top">
-        <i class="icon ion-md-arrow-dropup"/><br>
+    <div class="text-center d-flex justify-content-center" data-aos="flip-up">
+      <a href="#top" class="bg-white btn rounded-circle text-muted top">
+        <ion-icon name="arrow-dropup" /><br />
         TOP
       </a>
     </div>
 
     <div class="bg-black container-fluid pt-5 pb-4 text-white">
-      <div
-        class="container my-3 mx-auto row"
-        data-aos="flip-down">
+      <div class="container my-3 mx-auto row" data-aos="flip-down">
         <div class="col-sm-6">
           <h3 class="h6 mb-3 mb-sm-4">LOCATIONS</h3>
 
@@ -22,10 +16,10 @@
             <li
               v-for="(item, index) in locations"
               v-bind:key="index"
-              class="col-lg-6 mb-2">
+              class="col-lg-6 mb-2"
+            >
               <p class="mb-0">
-                {{ item.address }}
-                <br>
+                {{ item.address }}<br />
                 {{ item.city }}
               </p>
             </li>
@@ -39,20 +33,14 @@
             <li
               v-for="(item, index) in hours"
               v-bind:key="index"
-              class="col-md-6 col-lg-4 mb-2">
-              <p
-                v-if="item.days"
-                class="mb-0">
-                {{ item.days }}
-                <br>
+              class="col-md-6 col-lg-4 mb-2"
+            >
+              <p v-if="item.days" class="mb-0">
+                {{ item.days }}<br />
                 {{ item.hours }}
               </p>
 
-              <p
-                v-else
-                class="mb-0">
-                {{ item }}
-              </p>
+              <p v-else class="mb-0">{{ item }}</p>
             </li>
           </ul>
         </div>
@@ -61,17 +49,12 @@
 
     <div class="bg-dark container-fluid py-2 text-light">
       <div class="container d-flex align-items-center">
-        <p class="mb-0 mr-4">&copy; 2018 The Azka. All rights reserved.
-        </p>
+        <p class="mb-0 mr-4">&copy; 2019 The Azka. All rights reserved.</p>
 
         <ul class="list-unstyled d-flex align-items-center mb-0">
-          <li
-            v-for="(item, index) in accounts"
-            v-bind:key="index">
-            <a
-              v-bind:href="item.link"
-              class="text-light">
-              <i v-bind:class="'icon ion-' + item.icon + ' px-3'"/>
+          <li v-for="(item, index) in accounts" v-bind:key="index">
+            <a v-bind:href="item.link" class="text-light">
+              <i v-bind:class="'icon ion-' + item.icon + ' px-3'" />
             </a>
           </li>
         </ul>

@@ -4,11 +4,14 @@
       <img
         src="~/assets/img/owner.jpg"
         alt="Owner"
-        class="hvr-grow img-fluid">
+        class="hvr-grow img-fluid"
+      />
     </div>
 
     <blockquote class="blockquote text-center">
-      <p class="mb-0 font-italic">Here we want to share with you our passion for quality baked goods.</p>
+      <p class="mb-0 font-italic">
+        Here we want to share with you our passion for quality baked goods.
+      </p>
       <footer class="blockquote-footer">Azka</footer>
     </blockquote>
   </div>

@@ -1,12 +1,10 @@
 <template>
-  <div
-    id="top"
-    class="d-flex flex-column mh-100">
-    <app-nav/>
+  <div id="top" class="d-flex flex-column mh-100">
+    <AppNav />
 
-    <nuxt data-aos="fade"/>
+    <nuxt data-aos="fade" />
 
-    <app-footer/>
+    <AppFooter />
   </div>
 </template>
 

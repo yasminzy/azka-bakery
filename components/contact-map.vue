@@ -1,15 +1,17 @@
 <template>
-  <gmap-map
+  <GmapMap
     v-bind:center="center"
     v-bind:zoom="7"
     style="height: 225px; max-width: 786px; width: 100%;"
-    class="mx-auto">
-    <gmap-marker
+    class="mx-auto"
+  >
+    <GmapMarker
       v-for="(m, index) in markers"
       v-bind:key="index"
       v-bind:position="m.position"
-      v-bind:clickable="true"/>
-  </gmap-map>
+      v-bind:clickable="true"
+    />
+  </GmapMap>
 </template>
 
 <script>

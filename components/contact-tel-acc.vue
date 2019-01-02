@@ -1,29 +1,28 @@
 <template>
-  <div class="tel d-lg-flex justify-content-between align-items-center mb-5 mb-lg-0 ">
+  <div
+    class="tel d-lg-flex justify-content-between align-items-center mb-5 mb-lg-0"
+  >
     <ul class="list-unstyled mb-3 mb-lg-0">
-      <li
-        v-for="(item, index) in contacts"
-        v-bind:key="index">
-        <a
-          v-bind:href="item.link"
-          class="text-dark">
+      <li v-for="(item, index) in contacts" v-bind:key="index">
+        <a v-bind:href="item.link" class="text-dark">
           <p class="mb-1 mb-lg-0">
-            <i v-bind:class="'icon ion-' + item.icon"/>
+            <ion-icon v-bind:name="item.icon" />
             {{ item.text }}
           </p>
         </a>
       </li>
     </ul>
 
-    <ul class="list-unstyled d-flex justify-content-center align-items-center mb-0">
+    <ul
+      class="list-unstyled d-flex justify-content-center align-items-center mb-0"
+    >
       <li
         v-for="(item, index) in accounts"
         v-bind:key="index"
-        class="hvr-grow-rotate">
-        <a
-          v-bind:href="item.link"
-          class="text-dark">
-          <i v-bind:class="'h3 icon ion-' + item.icon + ' px-3'"/>
+        class="hvr-grow-rotate"
+      >
+        <a v-bind:href="item.link" class="text-dark">
+          <ion-icon v-bind:name="item.icon" class="h3 px-3" />
         </a>
       </li>
     </ul>

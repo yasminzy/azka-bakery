@@ -1,26 +1,19 @@
 <template>
   <div class="mh-100">
-    <app-banner
-      cursive="delightful"
-      title="products"
-      class="mb-5"/>
+    <AppBanner cursive="delightful" title="products" class="mb-5" />
 
-    <order-product-type
+    <OrderProductType
       type="cake"
       title="cakes &amp; cupcakes"
-      data-aos="flip-left"/>
-    <order-product-type
+      data-aos="flip-left"
+    />
+    <OrderProductType
       type="pie"
       title="pies &amp; tarts"
-      data-aos="flip-right"/>
-    <order-product-type
-      type="cookie"
-      title="cookies"
-      data-aos="flip-left"/>
-    <order-product-type
-      type="bread"
-      title="breads"
-      data-aos="flip-right"/>
+      data-aos="flip-right"
+    />
+    <OrderProductType type="cookie" title="cookies" data-aos="flip-left" />
+    <OrderProductType type="bread" title="breads" data-aos="flip-right" />
   </div>
 </template>
 

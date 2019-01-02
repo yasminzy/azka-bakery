@@ -4,13 +4,11 @@
       class="container text-center"
       data-aos="fade-up"
       data-aos-duration="800"
-      data-aos-delay="400">
-      <app-title
-        v-bind:index="true"
-        cursive="welcome"
-        title="the azka"/>
+      data-aos-delay="400"
+    >
+      <AppTitle v-bind:index="true" cursive="welcome" title="the azka" />
 
-      <hr class="text-primary">
+      <hr class="text-primary" />
 
       <small class="h6 text-white">BAKERY &amp; PASTRY</small>
     </div>
@@ -29,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 .container-fluid {
-  background: url("~/assets/img/header.jpg") center center no-repeat;
+  background: url("~assets/img/header.jpg") center center no-repeat;
   background-size: cover;
   padding-top: 7.5rem;
 
