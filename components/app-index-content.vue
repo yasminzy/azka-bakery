@@ -4,7 +4,7 @@
 
     <p class="text-muted">{{ content }}</p>
 
-    <router-link v-bind:to="to" class="text-uppercase text-primary">
+    <router-link :to="to" class="text-uppercase text-primary">
       {{ link }}
     </router-link>
   </div>

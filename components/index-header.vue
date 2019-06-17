@@ -6,7 +6,7 @@
       data-aos-duration="800"
       data-aos-delay="400"
     >
-      <AppTitle v-bind:index="true" cursive="welcome" title="the azka" />
+      <AppTitle :index="true" cursive="welcome" title="the azka" />
 
       <hr class="text-primary" />
 

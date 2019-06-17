@@ -7,7 +7,7 @@
     <ul class="list-group mb-5 wrapper">
       <li
         v-for="item in typeFilter(products, type)"
-        v-bind:key="item.id"
+        :key="item.id"
         class="bg-transparent border-0 list-group-item text-center"
       >
         <div>
@@ -18,11 +18,11 @@
           <p>${{ item.price }}</p>
 
           <button
-            v-bind:data-item-id="item.id"
-            v-bind:data-item-name="item.name"
-            v-bind:data-item-price="item.price"
-            v-bind:data-item-description="item.description"
-            v-bind:data-item-categories="item.type"
+            :data-item-id="item.id"
+            :data-item-name="item.name"
+            :data-item-price="item.price"
+            :data-item-description="item.description"
+            :data-item-categories="item.type"
             class="btn btn-outline-primary snipcart-add-item"
             data-item-url="https://azka.netlify.com/order"
           >
@@ -55,7 +55,7 @@ export default {
   },
   methods: {
     typeFilter(input, word) {
-      return input.filter(item => item.type == word);
+      return input.filter(item => item.type === word);
     }
   }
 };

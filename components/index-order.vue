@@ -17,14 +17,10 @@
       </div>
 
       <div class="col-lg-6 pic" data-aos="fade-down-left">
-        <div
-          v-for="(item, index) in menu"
-          v-bind:key="index"
-          class="img-wrapper"
-        >
+        <div v-for="(item, index) in menu" :key="index" class="img-wrapper">
           <img
             v-lazy="'/img/' + urlize(item) + '.jpg'"
-            v-bind:alt="item"
+            :alt="item"
             class="hvr-grow img-fluid"
           />
         </div>

@@ -15,7 +15,7 @@
           <ul class="list-unstyled row">
             <li
               v-for="(item, index) in locations"
-              v-bind:key="index"
+              :key="index"
               class="col-lg-6 mb-2"
             >
               <p class="mb-0">
@@ -32,7 +32,7 @@
           <ul class="list-unstyled row">
             <li
               v-for="(item, index) in hours"
-              v-bind:key="index"
+              :key="index"
               class="col-md-6 col-lg-4 mb-2"
             >
               <p v-if="item.days" class="mb-0">
@@ -49,12 +49,12 @@
 
     <div class="bg-dark container-fluid py-2 text-light">
       <div class="container d-flex align-items-center">
-        <p class="mb-0 mr-4">&copy; 2019 The Azka. All rights reserved.</p>
+        <p class="mb-0 mr-4">&copy; 2018-2019 The Azka. All rights reserved.</p>
 
         <ul class="list-unstyled d-flex align-items-center mb-0">
-          <li v-for="(item, index) in accounts" v-bind:key="index">
-            <a v-bind:href="item.link" class="text-light">
-              <i v-bind:class="'icon ion-' + item.icon + ' px-3'" />
+          <li v-for="(item, index) in accounts" :key="index">
+            <a :href="item.link" class="text-light">
+              <ion-icon :name="item.icon" class="icon px-3" />
             </a>
           </li>
         </ul>
@@ -100,6 +100,7 @@ export default {
 footer {
   position: relative;
 }
+
 .top {
   min-height: 3rem;
   min-width: 3rem;

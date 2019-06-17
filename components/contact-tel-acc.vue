@@ -3,10 +3,10 @@
     class="tel d-lg-flex justify-content-between align-items-center mb-5 mb-lg-0"
   >
     <ul class="list-unstyled mb-3 mb-lg-0">
-      <li v-for="(item, index) in contacts" v-bind:key="index">
-        <a v-bind:href="item.link" class="text-dark">
+      <li v-for="(item, index) in contacts" :key="index">
+        <a :href="item.link" class="text-dark">
           <p class="mb-1 mb-lg-0">
-            <ion-icon v-bind:name="item.icon" />
+            <ion-icon :name="item.icon" />
             {{ item.text }}
           </p>
         </a>
@@ -18,11 +18,11 @@
     >
       <li
         v-for="(item, index) in accounts"
-        v-bind:key="index"
+        :key="index"
         class="hvr-grow-rotate"
       >
-        <a v-bind:href="item.link" class="text-dark">
-          <ion-icon v-bind:name="item.icon" class="h3 px-3" />
+        <a :href="item.link" class="text-dark">
+          <ion-icon :name="item.icon" class="h3 px-3" />
         </a>
       </li>
     </ul>

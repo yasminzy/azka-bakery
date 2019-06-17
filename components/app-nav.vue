@@ -30,8 +30,8 @@
 
     <div id="navbarSupportedContent" class="collapse navbar-collapse">
       <ul class="navbar-nav text-right ml-auto w-auto">
-        <li v-for="(item, index) in menu" v-bind:key="index" class="nav-item">
-          <router-link v-bind:to="to(item)" class="nav-link mx-2 pb-1 px-0">
+        <li v-for="(item, index) in menu" :key="index" class="nav-item">
+          <router-link :to="to(item)" class="nav-link mx-2 pb-1 px-0">
             {{ item.label || item }}
           </router-link>
         </li>

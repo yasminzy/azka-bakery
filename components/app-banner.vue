@@ -1,7 +1,7 @@
 <template>
   <div
-    v-bind:id="urlize(title)"
-    v-bind:class="
+    :id="urlize(title)"
+    :class="
       'container-fluid d-flex justify-content-center align-items-center parallax py-5 mh-' +
         height
     "
