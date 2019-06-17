@@ -1,8 +1,8 @@
 {
   "name": "azka-bakery",
-  "version": "1.0.0",
-  "description": "Sample ecommerce website by Yasmin ZY",
-  "author": "Yasmin Zulfati Yusrina <yzyusrina@ymail.com>",
+  "version": "2.0.0",
+  "description": "Sample e-commerce website by Yasmin ZY",
+  "author": "Yasmin Zulfati Yusrina",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -14,22 +14,33 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.1.3",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.3.4",
-    "vue2-google-maps": "^0.10.5"
+    "jquery": "^3.4.1",
+    "nuxt": "^2.8.1",
+    "popper.js": "^1.15.0",
+    "vue-lazyload": "^1.2.6",
+    "vue2-google-maps": "^0.10.6"
   },
   "devDependencies": {
+    "@nuxtjs/dotenv": "^1.3.0",
+    "@nuxtjs/eslint-config": "^0.0.1",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.11.1",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.11.0",
-    "nodemon": "^1.18.9",
-    "prettier": "1.15.3",
-    "sass-loader": "^7.1.0",
-    "vue-lazyload": "^1.2.6"
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-standard": ">=12.0.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": ">=2.17.3",
+    "eslint-plugin-jest": ">=22.6.4",
+    "eslint-plugin-node": ">=9.1.0",
+    "eslint-plugin-nuxt": ">=0.4.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": ">=4.1.1",
+    "eslint-plugin-standard": ">=4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "eslint": "^5.16.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.17.1",
+    "sass-loader": "^7.1.0"
   }
 }
