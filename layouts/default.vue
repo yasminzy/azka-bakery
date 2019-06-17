@@ -27,10 +27,6 @@ export default {
   scroll-behavior: smooth;
 }
 
-[v-cloak] {
-  display: none;
-}
-
 ::selection {
   background-color: $primary;
   color: white;

@@ -5,7 +5,7 @@
 
     <AboutQuote data-aos="fade-down" />
 
-    <AppBanner v-bind:height="50" title="bakery" cursive empty />
+    <AppBanner :height="50" title="bakery" cursive empty />
 
     <AboutToday data-aos="fade-left" />
   </div>
