@@ -19,7 +19,7 @@
       <div class="col-lg-6 pic" data-aos="fade-down-left">
         <div v-for="(item, index) in menu" :key="index" class="img-wrapper">
           <img
-            v-lazy="'/img/' + urlize(item) + '.jpg'"
+            v-lazy="require('../assets/img/' + urlize(item) + '.jpg')"
             :alt="item"
             class="hvr-grow img-fluid"
           />
