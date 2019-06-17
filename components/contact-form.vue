@@ -37,12 +37,12 @@
         />
       </div>
 
-      <input name="_subject" type="hidden" value="Azka - Contact" />>
+      <input name="_subject" type="hidden" value="Azka - Contact" />
 
       <input name="_next" type="hidden" value="https://azka.netlify.com/sent" />
 
       <button class="btn btn-block btn-primary text-white" type="submit">
-        <ion-icon name="paper-plane" />
+        <ion-icon name="send" />
         SEND
       </button>
     </form>
