@@ -1,17 +1,13 @@
-const pkg = require("./package");
+import pkg from "./package";
 
-module.exports = {
+export default {
   mode: "universal",
   head: {
     title: "Azka Bakery",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: pkg.description
-      }
+      { hid: "description", name: "description", content: pkg.description }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -23,13 +19,11 @@ module.exports = {
     ],
     script: [
       {
-        src: "https://code.jquery.com/jquery-3.3.1.min.js",
-        integrity: "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=",
+        src: "https://code.jquery.com/jquery-3.4.1.min.js",
+        integrity: "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=",
         crossorigin: "anonymous",
         body: true
       },
-      { src: "~/bootstrap/dist/js/bootstrap.min.js", body: true },
-      { src: "https://unpkg.com/ionicons/dist/ionicons.js", body: true },
       {
         src: "https://cdn.snipcart.com/scripts/2.0/snipcart.js",
         id: "snipcart",
@@ -42,10 +36,12 @@ module.exports = {
   loading: { color: "#ff9800" },
   css: ["aos/dist/aos.css", "~/assets/snipcart/custom-snipcart.css"],
   plugins: [
-    { src: "~/plugins/aos", ssr: false },
+    "~/plugins/bootstrap",
     "~/plugins/vue-lazyload",
-    "~/plugins/vue2-google-maps"
+    "~/plugins/vue2-google-maps",
+    { src: "~/plugins/aos", ssr: false }
   ],
+  modules: ["@nuxtjs/dotenv"],
   build: {
     extend(config, ctx) {
       if (ctx.isDev && ctx.isClient) {
