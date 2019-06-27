@@ -15,5 +15,5 @@ module.exports = {
     "prettier/vue"
   ],
   plugins: ["prettier"],
-  rules: { "vue/v-bind-style": "off" }
+  rules: { "vue/v-bind-style": "off", "import/order": "off" }
 };
