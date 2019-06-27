@@ -37,12 +37,12 @@ export default {
     return {
       contacts: [
         {
-          icon: "md-call",
+          icon: "call",
           link: "tel:4143576188",
           text: "(414) 357-6188"
         },
         {
-          icon: "md-call",
+          icon: "call",
           link: "tel:5334624476",
           text: "(414) 462-4476"
         }
