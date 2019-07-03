@@ -7,7 +7,7 @@
     <router-link to="/" class="navbar-brand">
       <img
         class="d-inline-block align-top mr-2"
-        src="~/assets/img/logo.png"
+        src="@/assets/img/logo.png"
         alt="Logo"
         height="30"
         width="30"

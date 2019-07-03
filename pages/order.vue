@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import AppBanner from "~/components/app-banner";
-import OrderProductType from "~/components/order-product-type";
+import AppBanner from "@/components/app-banner";
+import OrderProductType from "@/components/order-product-type";
 
 export default {
   components: {

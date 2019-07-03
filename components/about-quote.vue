@@ -2,7 +2,7 @@
   <div class="container d-flex flex-column align-items-center pb-5">
     <div class="img-wrapper mx-auto rounded-circle mb-3">
       <img
-        src="~/assets/img/owner.jpg"
+        src="@/assets/img/owner.jpg"
         alt="Owner"
         class="hvr-grow img-fluid"
       />

@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import AppBanner from "~/components/app-banner";
-import ContactContent from "~/components/contact-content";
+import AppBanner from "@/components/app-banner";
+import ContactContent from "@/components/contact-content";
 
 export default {
   components: {

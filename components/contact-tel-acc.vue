@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { accounts } from "~/assets/js/data";
+import { accounts } from "@/assets/js/data";
 
 export default {
   data() {

@@ -1,13 +1,15 @@
-import pkg from "./package";
-
 export default {
   mode: "universal",
   head: {
-    title: "Azka Bakery",
+    title: process.env.npm_package_name || "Azka Bakery",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: pkg.description }
+      {
+        hid: "description",
+        name: "description",
+        content: process.env.npm_package_description || ""
+      }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -33,26 +35,24 @@ export default {
       }
     ]
   },
-  loading: { color: "#ff9800" },
-  css: ["aos/dist/aos.css", "~/assets/snipcart/custom-snipcart.css"],
+  loading: { color: "#Hex	FF9800" },
+  css: ["@/assets/snipcart/custom-snipcart.css", "aos/dist/aos.css"],
   plugins: [
-    "~/plugins/bootstrap",
-    "~/plugins/vue-lazyload",
-    "~/plugins/vue2-google-maps",
-    { src: "~/plugins/aos", ssr: false }
+    "@/plugins/bootstrap",
+    "@/plugins/vue-lazyload",
+    "@/plugins/vue2-google-maps",
+    { src: "@/plugins/aos", ssr: false }
   ],
   modules: ["@nuxtjs/dotenv"],
   build: {
-    extend(config, ctx) {
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: "pre",
-          test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/
-        });
+    postcss: {
+      preset: {
+        features: {
+          customProperties: false
+        }
       }
-    }
+    },
+    extend(config, ctx) {}
   },
   router: {
     scrollBehavior: function() {

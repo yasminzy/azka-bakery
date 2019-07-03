@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import ContactForm from "~/components/contact-form";
-import ContactMap from "~/components/contact-map";
-import ContactTelAcc from "~/components/contact-tel-acc";
+import ContactForm from "@/components/contact-form";
+import ContactMap from "@/components/contact-map";
+import ContactTelAcc from "@/components/contact-tel-acc";
 
 export default {
   components: {

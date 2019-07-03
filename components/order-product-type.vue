@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import { products } from "~/assets/js/data";
+import { products } from "@/assets/js/data";
 
 export default {
   props: {

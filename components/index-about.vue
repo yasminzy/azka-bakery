@@ -20,7 +20,7 @@
         <div class="img-wrapper">
           <img
             class="hvr-grow img-fluid"
-            src="~/assets/img/about.jpg"
+            src="@/assets/img/about.jpg"
             alt="Food"
           />
         </div>

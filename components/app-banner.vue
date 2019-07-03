@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { urlize } from "~/assets/js/functions";
+import { urlize } from "@/assets/js/functions";
 
 export default {
   props: {

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AppTitle from "~/components/app-title";
+import AppTitle from "@/components/app-title";
 
 export default {
   components: {

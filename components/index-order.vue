@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { urlize } from "~/assets/js/functions";
+import { urlize } from "@/assets/js/functions";
 import AppTitle from "./app-title";
 import AppIndexContent from "./app-index-content";
 

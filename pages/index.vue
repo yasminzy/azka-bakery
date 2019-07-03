@@ -15,11 +15,11 @@
 </template>
 
 <script>
-import IndexAbout from "~/components/index-about";
-import AppBanner from "~/components/app-banner";
-import IndexHeader from "~/components/index-header";
-import IndexProducts from "~/components/index-products";
-import IndexOrder from "~/components/index-order";
+import IndexAbout from "@/components/index-about";
+import AppBanner from "@/components/app-banner";
+import IndexHeader from "@/components/index-header";
+import IndexProducts from "@/components/index-products";
+import IndexOrder from "@/components/index-order";
 
 export default {
   components: {
